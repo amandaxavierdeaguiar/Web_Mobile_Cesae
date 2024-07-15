@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=AppTest
+comment0.text=\r\n\ Igual\ ao\ nome\ do\ Ficheiro\ em\ CamelCase\r\n
+comment1.params=
+comment1.target=AppTest()
+comment1.text=\ Static\ void\ AppTest()\r\n\ Static\ -\ N\u00E3o\ instancia\r\n\ void\ -\ sem\ retorno\r\n
+comment2.params=
+comment2.target=void\ feriasAgosto()
+comment3.params=
+comment3.target=float\ funcaoQueRetornaValor()
+numComments=4

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style_contato.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img class="logo" src="assets\logo\AmandaXavier3.png" alt="Logo Amanda" /></a>
+        
+        <div class="menu_">
+            <div class="cabecalho__busca">
+                <div class="menu_new">
+                    <ul>
+                        <li><a href="portfolio.html">
+                           Portfolio</a></li>
+                        <li><a href="contato.html">
+                            Contato</a></li>
+                      </ul>
+                </div>
+                
+            </div>
+        </div>     
+    </header>
+    <section class="banner_contato">
+        <img class="contato_foto" src="assets/imagens/banner_contato.png" alt="Entre em contato">
+    </section>
+    <section class="contato">
+        <form id="formulario-contato">
+                
+            <h2>Formulário</h2>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem-contato" name="mensagem" required></textarea><br>
+            <button  type="submit">Enviar mensagem</button>
+            <div class="mensagem-enviada">Mensagem Enviada</div>
+        </form>
+
+    </section>
+    
+
+    <!--<main class="principal_contato">
+        <section class="conteudo_contato">
+            <form action="destino.php">
+                <label for="Login">login</label>
+                <input type="Email" name="login" id="login" placeholder="Digite seu login">
+                <label for="senha" id="senha" placeholder="Digite sua senha">senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" maxlength="8" minlength="6">
+                <input type="date">
+                <input type="text" list="cidade" placeholder="Qual região">
+                <datalist id="cidade">
+                    <option value="Porto"></option>
+                    <option value="Lisboa"></option>
+                </datalist>
+                <button>
+                    Enviar
+                </button>
+            </form>
+        </section>
+        
+    </main>-->         
+</body>
+</html>
