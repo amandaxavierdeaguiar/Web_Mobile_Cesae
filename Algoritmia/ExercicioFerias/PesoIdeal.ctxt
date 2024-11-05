@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PesoIdeal
+comment1.params=
+comment1.target=PesoIdeal()
+comment2.params=
+comment2.target=void\ inputUser()
+comment3.params=sexo
+comment3.target=void\ alturaUser(java.lang.String)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

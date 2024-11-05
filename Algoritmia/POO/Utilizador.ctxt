@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Utilizador
+comment1.params=
+comment1.target=Utilizador()
+comment2.params=paramUsername\ paramPassword
+comment2.target=void\ fazerLogin(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=void\ fazerLogout()
+comment4.params=
+comment4.target=void\ fazerRegistro()
+numComments=5

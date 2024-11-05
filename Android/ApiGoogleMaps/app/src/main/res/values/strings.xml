@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ApiGoogleMaps</string>
+    <string name="title_activity_posicao_maps">PosicaoMaps</string>
+</resources>

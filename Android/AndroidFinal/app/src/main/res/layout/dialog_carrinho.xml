@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_carrinho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="14dp"/>
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/text_carrinho"/>
+
+    <EditText
+        android:id="@+id/input_remover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o número do produto para remover"
+        android:layout_below="@+id/text_total"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/button_remover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B57C00"
+        android:text="Remover"
+        android:layout_below="@+id/input_remover"/>
+
+    <Button
+        android:id="@+id/button_fechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B57C00"
+        android:text="Fechar"
+        android:layout_below="@+id/button_remover"
+        />
+
+    <Button
+        android:id="@+id/button_comprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B57C00"
+        android:text="Comprar"
+        android:layout_below="@+id/button_fechar"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ClasseY
+comment1.params=
+comment1.target=ClasseY()
+comment2.params=paramContagem\ paramEstado
+comment2.target=void\ operacao(int,\ boolean)
+numComments=3

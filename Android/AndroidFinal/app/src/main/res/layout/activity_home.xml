@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".views.Home">
+
+    <LinearLayout
+        android:id="@+id/linear_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/white"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:backgroundTint="#E7A10B"
+            >
+            <!--<TextView
+                android:id="@+id/text_nivel_bateria"
+                android:layout_marginStart="20sp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                >
+            </TextView>-->
+            <ImageView
+                android:id="@+id/imageBateria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="16dp" />
+            <TextClock
+                android:id="@+id/clock_horas_minutos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:format12Hour="hh:mm"
+                android:format24Hour="hh:mm"
+                android:text="00"
+                android:layout_marginStart="10sp"
+                android:textSize="14sp"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/img_cart"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:src="@drawable/shopping_cart_"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_header"
+        android:gravity="center"
+        >
+        <!--<LinearLayout
+            android:id="@+id/linear2_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="#E7A10B"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:src="@drawable/search"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputSearch"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Pesquise"
+                android:textAlignment="center"
+                android:layout_weight="4"/>
+        </LinearLayout>-->
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/banner_bolinhos"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:layout_below="@+id/img_banner"/>
+
+</RelativeLayout>

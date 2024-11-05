@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 100%;
+
+}
+
+.Logo-header{
+    margin: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 350px;
+}
+.navegation {
+    table-layout: fixed;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: #323231;*/
+    /*position: relative; /* Adicione essa propriedade */
+    z-index: 1; /* Adicione essa propriedade */
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.menu-button p{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #25183e;
+    font-size: 14px;
+    font-weight: 700;
+    /*padding: 10px 20px;*/
+    padding: 15px;
+    cursor: pointer;
+}
+
+.menu-button p:hover {
+    border-bottom: 2px solid #25183e;
+    transition:ease-in;
+    transition-duration: 0.2s;
+    color: #0080ff;
+}
+
+
+.menu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;    
+    /*background-color: #fff;
+    border: 1px solid #ccc;*/
+    list-style: none;
+    padding: 0;
+   
+}
+
+.menu-items{
+    background-color: #fff;
+    width: 180px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+.menu-items li {
+    padding: 5px;  
+}
+
+.menu-items a{
+    color: grey;
+}
+
+.menu-items a:hover{
+    color: #0080ff;
+}
+
+.menu-button:hover + .menu-items {
+    display: block;
+}
+
+/*Banner*/
+element.style {
+    color: #ffffff;
+    background-image: url(https://www.cesaedigital.pt/wp-content/uploads/2015/11/topo.jpg);
+}
+.banner-{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+
+}
+.banner-{
+    padding-top: 172px;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(45, 51, 57, .95);
+    min-height: 235px;
+}
+

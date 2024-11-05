@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Aventura
+comment1.params=
+comment1.target=Aventura()
+comment2.params=
+comment2.target=void\ pedido()
+comment3.params=opcaoUsuario
+comment3.target=void\ historiaVilao(java.lang.String)
+numComments=4

@@ -1,0 +1,13 @@
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /*margin-top: -40px;*/
+  }
+
+.banner{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=LancamentoDados
+comment1.params=
+comment1.target=LancamentoDados()
+comment2.params=
+comment2.target=void\ pedidoLancamento()
+comment3.params=inputUtilizador
+comment3.target=void\ dado(int)
+comment4.params=
+comment4.target=void\ jogarNovamente()
+numComments=5

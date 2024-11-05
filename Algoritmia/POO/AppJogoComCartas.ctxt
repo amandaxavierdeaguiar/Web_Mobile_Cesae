@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=AppJogoComCartas
+comment1.params=
+comment1.target=AppJogoComCartas()
+comment2.params=
+comment2.target=void\ criarNovoBaralho()
+comment3.params=numeroDeCartasComprar
+comment3.target=void\ comprarCartas(int)
+comment4.params=
+comment4.target=void\ tirarUmaCarta()
+numComments=5

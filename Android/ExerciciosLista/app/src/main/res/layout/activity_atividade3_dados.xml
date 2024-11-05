@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Atividade3Dados">
+
+    <TextView
+        android:id="@+id/textView_DadosAlunos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Dados dos Alunos: "
+        android:textAlignment="center"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="64dp" />
+    <TextView
+        android:id="@+id/textView_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Dados dos Alunos: "
+        android:textAlignment="center"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="64dp" />
+    <TextView
+        android:id="@+id/textView_morada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Dados dos Alunos: "
+        android:textAlignment="center"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="64dp" />
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Dados dos Alunos: "
+        android:textAlignment="center"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/button_atividade1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:text="ATIVIDADE 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_atividade3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="ATIVIDADE 3"
+        app:layout_constraintStart_toStartOf="@+id/button_atividade2"
+        app:layout_constraintTop_toBottomOf="@+id/button_atividade2" />
+
+    <Button
+        android:id="@+id/button_atividade2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ATIVIDADE 2"
+        app:layout_constraintStart_toStartOf="@+id/button_atividade1"
+        app:layout_constraintTop_toBottomOf="@+id/button_atividade1" />
+
+    <Button
+        android:id="@+id/button_atividade4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="ATIVIDADE 4"
+        app:layout_constraintStart_toStartOf="@+id/button_atividade3"
+        app:layout_constraintTop_toBottomOf="@+id/button_atividade3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

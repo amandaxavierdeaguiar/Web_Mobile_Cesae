@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Teste
+comment1.params=
+comment1.target=Teste()
+comment2.params=realA\ realB
+comment2.target=int\ op(int,\ int)
+numComments=3

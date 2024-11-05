@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292929"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/button_atividade1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="#0C6CB8"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="ATIVIDADE 1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_atividade4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#0C6CB8"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="ATIVIDADE 4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/button_atividade3"
+        app:layout_constraintTop_toBottomOf="@+id/button_atividade3" />
+
+    <Button
+        android:id="@+id/button_atividade3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#0C6CB8"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="ATIVIDADE 3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/button_atividade2"
+        app:layout_constraintTop_toBottomOf="@+id/button_atividade2" />
+
+    <Button
+        android:id="@+id/button_atividade5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#0C6CB8"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="ATIVIDADE 5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/button_atividade4"
+        app:layout_constraintTop_toBottomOf="@+id/button_atividade4" />
+
+    <Button
+        android:id="@+id/button_atividade2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#0C6CB8"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="ATIVIDADE 2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/button_atividade1"
+        app:layout_constraintTop_toBottomOf="@+id/button_atividade1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

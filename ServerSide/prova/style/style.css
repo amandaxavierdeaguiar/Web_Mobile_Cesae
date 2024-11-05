@@ -1,0 +1,118 @@
+body {
+    background-color: #292929;
+    margin: 0;
+    width: 100%;
+    height: 100vh; 
+}
+
+.ContainerLight {
+    background-image: linear-gradient(to bottom, #8ACDCE, #EA92BD);
+    width: 50%;
+    height: 90%; /*50vh*/
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.btnExercise{
+    background-color: #fff;
+    border-radius: 20px;    
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title{
+    padding: 10px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.resolution{
+    display:none;
+    background-color: #fff;
+    width: 50%;
+    height: 90%;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.resolution.show {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.btnBack{
+    border-radius: 100%;
+    background-color: #EA92BD;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btnName{
+    background-color: #EA92BD;
+    border-radius: 20px;    
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btnSize {
+    border-radius: 100%;
+    background-color: #EA92BD;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin: 10px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+  }
+
+.btnJS{
+    background-color: #EA92BD;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 100px;
+    transform: translateX(-50%);
+
+}
+
+.btnLearned{
+    background-color: #EA92BD;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 65px;
+    transform: translateX(-50%);
+
+}
+
+@media (max-width: 550px) {
+    .ContainerLight {
+      width: 80%;
+    }
+
+    .resolution{
+        width: 80%;
+      }
+}

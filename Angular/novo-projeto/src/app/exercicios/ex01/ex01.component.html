@@ -1,0 +1,15 @@
+<div style="background-color: rgb(231, 196, 247); border-radius: 10px;padding: 30px; display:flex; justify-content:center;text-align:center; width:500px">
+  <div>
+    <h3>Dados do Utilizador:</h3>
+    <p>Nome: {{nomeUtilizador}}</p>
+    <p>Idade: {{idadeUtilizador}}</p>
+    <div style="padding:20px; border-radius: 10px; border: 5px solid rgb(169, 17, 116); background-color:white; margin:10px">
+      <input [(ngModel)]="nomeUtilizador" placeholder="Digite seu nome: ">
+    </div>
+    <div style="padding:20px; border-radius: 10px; border: 5px solid rgb(169, 17, 116); background-color:white; margin:10px">
+      <input type="number" [(ngModel)]="idadeUtilizador" placeholder="Digite sua idade: ">
+    </div>
+  </div>
+
+</div>
+

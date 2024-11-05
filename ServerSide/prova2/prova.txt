@@ -1,0 +1,148 @@
+
+QUESTÃO 1
+
+Tendo em conta o funcionamento da Web, para que serve o JS? (1V)
+
+É uma linguagem de script com base na linguagem de programação ECMAScript.
+É uma linguagem de programação que permite a interação com o usuário. Dar movimento ao site. 
+É o padrão em linguagem “client side” para qualquer browser.
+
+QUESTÃO 2
+
+Imagina que o site do Cesae tem uma parte para os estudantes fazerem login. Quero colocar 
+um formulário que aparecerá na HomePage aos estudantes após fazerem login. Este 
+elemento servirá para que eles possam colocar o feedback para melhoramento do curso
+frequentado. De acordo com o que estudámos, o elemento input será criado no html ou em JS? Justifique (1V)
+
+Primeiro deve colocar no html o formulário com o <form action="Chamar o arquivo JS para manipular estes dados. Depois criar os inputs para pedir para o User colocar as informações que deseja, neste caso poderia fazer com base da experiencia de estudar no Cesae, o que acha da estrutura, dos professores, etc. Esses inputs fazemos  <input type="TIPO" id="IDENTIFICADOR UNICO" name=""/> Depois de todos os inputs com as informações desejadas, colocaremos um botão de submit para levar para o JS para enfim manupular os dados <button type="submit" >Submeter</button>.
+
+
+QUESTÃO 3
+
+3. Tendo em conta o seguinte código:
+Considere que o seguinte é escrito na consola do browser:
+
+1.1 num1 + num2 = 8? (1V)
+Falso.
+
+1.2 helloStudent(‘Rita’, 31) retorna olá Rita, 31? (1V)
+Verdadeiro
+
+1.3 hello retorna olá Rita, 31? (1V)
+False
+
+1.4 age retorna 31? (1V)
+Verdadeiro
+
+1.5 Se eu acrescentar no código num2 = 15 que valor recebo em num2? (1V)
+15
+
+1.6 num1 + num2 é agora 20? (1V)
+Não. 
+
+1.7 Para que num1+num2 seja 16, como coloco no código o num1? (1V)
+1
+
+1.8 Qual é o tipo de dados da variável jsDone? (1V)
+Boolean 
+
+QUESTÃO 4
+
+4.1.Usando os métodos dos Arrays, adiciona no fim do array uma palavra pass à tua escolha.
+(1V)
+password.push(987)
+
+4.2. Escreva uma condição que, mediante o que o que o user responder, lhe indique através 
+de um alert se acertou numa password que está no array ou não. (1V)
+if(password[0] == userPassword){
+    alert('Acertou a password')
+} else{
+    alert('Não acertou')
+}
+
+4.3. Crie um novo array chamado safePasses que retorne as passwords com mais de 6 
+caracteres(1V).
+
+let safePasses = password.filter(password => password.toString().length > 6);
+
+console.log(safePasses);
+
+safePasses.forEach((item) => {
+        console.log(`${item}`);
+})
+
+
+
+QUESTÃO 5
+5.1. Usando a função forEach dos arrays, itere o array de modo a imprimir na consola o 
+seguinte: (1V)
+studentGrades.forEach(function (student){
+    console.log(`A nota da ${student.studentName} é ${student.grade}`);
+});
+
+Considere que o seguinte é escrito na consola do browser:
+5.2. Qual o valor de studentGrades[5])? (1V)
+undefined
+
+5.3 studentGrades[0].nameAndGrade() é A Rita tem nota 16? (1V)
+VERDADEIRO - 'A Rita tem nota 16'
+
+QUESTÃO 6
+6.1. Substitua “A minha Lista de Aprendizagens como Web Developer” por “Os meus 
+ensinamentos para a vida”. (1V)
+
+let mudarNome = document.querySelector('h2');
+mudarNome.textContent= 'Os meus ensinamentos para a vida';
+
+6.2. A cada um dos items da lista, adicione: com sucesso! (1V)
+let listItems = document.querySelectorAll('#myList li');
+
+for (let i = 0; i < listItems.length; i++){ 
+    listItems[i].innerText += ' - aprendido'; 
+}
+
+6.3. Configure a submissão do formulário para que, ao ser submetido um novo item ele seja 
+adicionado na lista. (1V)
+
+const form = document.querySelector('form');
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    
+    let promptUser = document.querySelector('#myItem').value;
+    
+    if (promptUser.trim() !== '') {
+        let newUserSkill = document.createElement('li');
+        newUserSkill.innerText = promptUser + ' - aprendido';
+        
+        let list = document.querySelector('#myList');
+        list.appendChild(newUserSkill);
+        
+        document.querySelector('#myItem').value = '';
+    }
+});
+
+
+QUESTÃO 7
+Utilize a API do StarWars https://swapi.dev/. Se eu usar o endpoint vehicles com o id 16, 
+que veículo recebo? (1V)
+{
+    "name": "TIE bomber",
+    "model": "TIE/sa bomber",
+    "manufacturer": "Sienar Fleet Systems",
+    "cost_in_credits": "unknown",
+    "length": "7.8",
+    "max_atmosphering_speed": "850",
+    "crew": "1",
+    "passengers": "0",
+    "cargo_capacity": "none",
+    "consumables": "2 days",
+    "vehicle_class": "space/planetary bomber",
+    "pilots": [],
+    "films": [
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/"
+    ],
+    "created": "2014-12-15T12:33:15.838000Z",
+    "edited": "2014-12-20T21:30:21.675000Z",
+    "url": "https://swapi.dev/api/vehicles/16/"
+}

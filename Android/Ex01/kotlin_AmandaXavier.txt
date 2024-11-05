@@ -1,0 +1,164 @@
+fun main() {
+    exercicio5()
+}
+
+fun exercicio1(){
+    /*Escreva um programa onde declara duas variáveis e atribui um valor à sua escolha, seguidamente, 
+apresente a soma desses dois valores.*/
+    val x = 19
+    val y = 4
+
+    println("Resultado da soma: " + x + " + " + y + " = " + (x+y))
+} 
+
+fun exercicio2(){
+    /*Escreva um programa que determine a média aritmética de um conjunto de 3 valores escolhidos por 
+si. Tendo em consideração os valores introduzidos, deverá também apresentar a média ponderada 
+considerando as seguintes ponderações: 20%, 30%, 50%*/
+    // 20 nota maxima
+    // Colocando em Float
+    val valor1 = 10f
+    val valor2 = 5f
+    val valor3 = 20f
+    
+    val somaPonderado = (valor1 * 20 + valor2 * 30 + valor3 * 50)
+    val media = somaPonderado / 100
+
+    println("Média: $media")
+} 
+
+fun exercicio3(){
+    /*Escreva um programa que leia dois valores inteiros e os armazene na variáveis valor1 e valor2. Permute 
+o valor das variáveis e apresente o resultado. De seguida, verifique se consegue efetuar esta troca sem 
+criar variáveis adicionais*/
+    
+    /*VAR é a abreviação de variável, o que significa que você pode reatribuir seu conteúdo. VAL, por outro lado, 
+     * é a abreviação de valor, o que significa que você só pode inicializá-lo; NÃO pode reatribuí-lo.*/
+    
+    var valor1 = 60
+    var valor2 = 30
+    
+    println("ANTES:")
+    println("Valor 1: $valor1 Valor 2: $valor2")
+    
+    // com a troca é : 
+    valor2 = valor1 + valor2
+    valor1 = valor2 - valor1
+    valor2 = valor2 - valor1
+
+   
+    println("DEPOIS: ")
+    println("Valor 1: $valor1 Valor 2: $valor2")
+}
+
+fun exercicio4(){
+    /* Escreva um programa que requisite ao utilizador o preço de 3 produtos adquiridos. Apresente o valor 
+a pagar, considerando que deverá ter um desconto de 10% sobre o total dos produtos.*/
+    var prod1 = 20f
+    var prod2 = 10.50f
+    var prod3 = 16.20f
+    
+    val total = prod1 + prod2 + prod3 
+    var totalDesconto10 = total - (total * 0.10)
+    var formatado = String.format("%.2f", totalDesconto10)
+    // "%.2f" colocando 2 casas decimais 
+    
+    println("Total da compra: $total")
+    println("Desconto de 10%: $formatado")
+}
+
+fun exercicio5(){
+    /* Declare duas variáveis inteiras, e apresente na consola a maior das duas.*/
+    
+    val numerosMaior = arrayOf(120,50)
+    
+    println("O maior número é: ${numerosMaior.maxOrNull()}")
+
+    /* val inteiro1 = 20
+    val inteiro2 = 40
+    
+    if (inteiro1 > inteiro2){
+        println("$inteiro1 é MAIOR $inteiro2")
+    } else {
+        println("$inteiro1 é MENOR $inteiro2")
+    } */
+}
+
+fun exercicio6(){
+    /*  Crie um programa que mostre o menor de três números inteiros.*/
+    
+    /* Doc - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/ */
+    
+    val num = arrayOf(1, 2, 3)
+    val max = num.maxOrNull()
+    val min = num.minOrNull()
+
+    println("Maior número: $max Menor número: $min")    
+}
+
+fun exercicio7(){
+    /*  Escreva um programa que com 3 números, seguidamente deve colocar os números no ecrã por ordem
+crescente.*/
+    
+    /* Doc - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sort.html */
+    val num = intArrayOf(30, 20, 10)
+
+    num.sort()
+
+	println(num.joinToString())
+   	// doc - obrigatorio .joinToString() para imprimir
+    }
+
+fun exercicio8(){
+    /*  8. Faça um programa que imprima os números no intervalo de 1 a 250 inclusive. */
+    /* https://kotlinlang.org/docs/control-flow.html#for-loops */
+    for(numero in 1..250){
+        println(numero)
+      }
+    }
+
+fun exercicio9(){
+    /*  9. Faça um programa que imprima os números pares no intervalo de 1 a 400 inclusive. */
+    
+    for(numero in 1..400){
+        if(numero % 2 == 0){
+            println((numero))
+        }
+      }
+    }
+
+fun exercicio10(){
+    /*  10. Faça um programa que imprima os números ímpares no intervalo de 531 a 750 inclusive. */
+    
+    for(numero in 531..750){
+        if(numero % 2 != 0){
+            println((numero))
+        }
+      }
+    }
+
+fun exercicio11(){
+    /*  Faça um programa que imprima os números inteiros de 1 a 100 inclusive, e no final imprima também o 
+valor do seu somatório */
+    var soma = 0
+    
+    for(numero in 1..100){
+        soma += numero
+        println(numero)
+       }
+      println("Soma" + soma)
+    }
+
+fun exercicio12(){
+    /*  Escreva um programa que calcule e imprima o fatorial de um número inteiro não-negativo n.
+Exemplo de Fatorial de 5: 5x4x3x2x1=120
+Exemplo de Fatorial de 8: 8x7x6x5x4x3x2x1=40320 */
+    val fat = 8
+    var resultado = 1
+    
+    for (numero in 1..fat) {
+        resultado *= numero
+    }
+    
+    println("Fatorial de $fat é: $resultado")
+}
